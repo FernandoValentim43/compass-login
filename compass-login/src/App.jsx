@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { Timer } from './components/Timer/Timer'
 
 
 function App() {
-  return
+  return (
+    <Timer />
+  )
 }
 
 export default App
