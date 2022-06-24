@@ -4,11 +4,14 @@ export const SectionStyle = styled.section`
     width: 100%;
     height: 100vh;
     position: absolute;
+    
   }
 
   .login {
-    background-color: #2a2d31;
-  }
+    background: rgb(30,32,34);
+    background: linear-gradient(0deg, rgba(30,32,34,1) 41%, rgba(58,61,64,1) 100%);  
+}
+
   .home {
     background-color: #e5e5e5;
   }
