@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const SectionStyle = styled.section`
+export const SectionStyledLogin = styled.section`
   .main {
     display: flex;
     width: 100vw;
