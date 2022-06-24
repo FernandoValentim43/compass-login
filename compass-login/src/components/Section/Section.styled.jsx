@@ -22,11 +22,17 @@ export const SectionStyle = styled.section`
 
   .logo-white {
     z-index: +1;
+    
   }
 
   .logo-white img {
     position: absolute;
-    z-index: 2; /* put .green-box above .dashed-box */
+    z-index: 2; 
+
+    width: 220px;
+    max-width: 220px;
+    padding: 0px 35vh;
+   
   }
 
   
@@ -35,6 +41,7 @@ export const SectionStyle = styled.section`
 }
  
 .login-img img {
+    width: 100vh;
     height: 100vh;
 }
  
