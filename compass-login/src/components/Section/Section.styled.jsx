@@ -13,17 +13,31 @@ export const SectionStyle = styled.section`
     background-color: #e5e5e5;
   }
 
-  .img {
+  /* imgs */ 
+  .side-imgs {
     display: flex;
     justify-content: flex-end;
     
   }
 
-  .login-page-img {
-    height: 100vh;
-    min-height: 530px;
-   
+  .logo-white {
+    z-index: +1;
   }
+
+  .logo-white img {
+    position: absolute;
+    z-index: 2; /* put .green-box above .dashed-box */
+  }
+
+  
+.login-img {
+    height: 100vh;
+}
+ 
+.login-img img {
+    height: 100vh;
+}
+ 
 
 
 
