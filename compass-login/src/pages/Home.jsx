@@ -7,14 +7,20 @@ import ImgLogo from "../assets/compass-logo-white.png"
 function Home() {
     return (
         <SectionStyle>
-            <section className="login">
-            <div className="side-imgs">
-            <Image src={ImgLogo} wrapper="logo-white" />
-            <Image src={Image2} wrapper="login-img" />
-            </div>
-            
+            <section className="main">
+               
+               <div className="login-area">
                 
-            </section>
+               </div>
+               
+               <div className="img-area">
+               <Image src={ImgLogo} wrapper="logo-white" />
+               <Image src={Image2} wrapper="login-img" />
+               </div>
+               
+            </section>    
+
+        
         </SectionStyle>
     )
   }
