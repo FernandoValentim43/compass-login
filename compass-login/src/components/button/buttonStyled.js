@@ -13,17 +13,23 @@ const ButtonLogin = styled.button`
     color: white;
     width: 23.68rem;
     height: 4.18rem;
-    font-size: 18px;
+    font-size: 1.125rem;
 `;
 
 const ButtonLogOut = styled.button`
     cursor: pointer;
-    background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
 `;
 
 const ButtonNavegate = styled.button`
     cursor: pointer;
     background-color: white;
+    width: 8.18rem;
+    height: 6.18rem;
+    color: #C13216;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 1.125rem;
+    border: none;
 `;
 
 export { ButtonLogin, ButtonLogOut, ButtonNavegate }
