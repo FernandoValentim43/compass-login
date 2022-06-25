@@ -1,13 +1,15 @@
 import {Input} from '../input/Input'
-import {InputStyled} from '../input/InputStyled'
+
+
 
 export function Form () {
     return (
-
-        <InputStyled>
-          <Input type="text" placeholder="Usuário"/>
-        </InputStyled>
-    
+      <div className="form-div">
+        <form action="/">
+        <Input type="text" placeholder="Usuário"/>
+        <Input type="password" placeholder="Senha"/>
+      </form>
+      </div>
     )
        
 }
