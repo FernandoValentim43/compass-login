@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { TextClock, TextDate, GeneralDiv } from "./clock.styled";
 
 function formatedTime() {
     const date = new Date();
@@ -20,10 +21,10 @@ const Clock = () => {
     useEffect(() => { const clear = setInterval(() => {setTime(formatedTime());}, 1000); return () => clearInterval(clear);}, []);
 
     return (
-        <div>
-            <p>{time}</p>
-            <p>{day}</p>
-        </div>
+        <GeneralDiv>
+            <TextClock>{time}</TextClock>
+            <TextDate>{day}</TextDate>
+        </GeneralDiv>
     );
 }
 
