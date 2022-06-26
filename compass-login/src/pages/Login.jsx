@@ -16,8 +16,8 @@ function Login() {
                </div>
                
                <div className="img-area">
-               <Image src={LogoWhite} wrapper="logo-white" />
-               <Image src={Image2} wrapper="login-img" />
+               <Image src={LogoWhite} wrapper="logo-white" name="logowhite" />
+               <Image src={Image2} wrapper="login-img" name="loginimg" />
                </div>
                
             </section>     

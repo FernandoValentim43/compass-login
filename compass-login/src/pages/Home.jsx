@@ -9,13 +9,21 @@ import LogoBlack from "../assets/compass-logo-black.png";
 function Home() {
   return (
     <HomeStyled>
-      <div className="header">
-        <Image src={LogoBlack} wrapper="logo-black" />
-      </div>
+      <header>
+        <div className="header">
+          <Image src={LogoBlack} wrapper="logo-black" name="logoblack"/>
+        </div>
+      </header>
 
       <div className="main">
         <Image src={LogoBall} wrapper="logo-ball" name="logoball" />
       </div>
+
+      
+
+      <footer>
+        
+      </footer>
     </HomeStyled>
   );
 }
