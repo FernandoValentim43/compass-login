@@ -3,21 +3,26 @@ import styled from 'styled-components'
 export const InputStyled = styled.div`
     
     input {
+        
+        font-family: 'Poppins';
+        font-style: normal;
+
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
 
-        width: 320px;
-        height: 58px;
+        width: 300px;
+        height: 45px;
         
 
         padding-left: 15px;
        
         background-color: transparent;
         border: solid 1px white;
-        border-radius: 50px; 
-        margin-left: 10px;
-        margin-bottom: 30px;
+        border-radius: 50px;
+
+        margin-left: 0px;
+        margin-bottom: 24px;
     }
 
     input::placeholder {

@@ -11,7 +11,9 @@ export const TextStyled = styled.div`
             font-size: 56px;
             color: #E0E0E0;
             margin-bottom: 0px;
+            margin-top: 25px;
         }
+
         > .paragraph {
             font-family: 'Poppins';
             font-style: normal;
@@ -20,9 +22,21 @@ export const TextStyled = styled.div`
             color: #E0E0E0;
 
             margin-top: 2px;
-            margin-bottom: 100px;
-            max-width: 340px;
+            margin-bottom: 70px;
+            max-width: 320px;
             
+        }
+
+        > .login {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-size: 22px;
+            color: #E0E0E0;
+
+            margin-top: 2px;
+            margin-bottom: 25px;
+            max-width: 320px;
+
         }
 
 

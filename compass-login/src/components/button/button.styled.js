@@ -12,9 +12,10 @@ const ButtonStyled = styled.div`
         font-family: 'Poppins';
         font-style: normal;
         color: white;
-        width: 360px;
-        height: 60px;
+        width: 320px;
+        height: 55px;
         font-size: 1.13rem;
+        margin-top: 25px;
         font-weight: bold;
     }
     .navegate{

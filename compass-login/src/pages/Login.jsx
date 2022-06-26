@@ -13,11 +13,8 @@ function Login() {
         <SectionStyledLogin>
             <section className="main">
                <div className="login-area">
-                        <Form/>
-                           
+                        <Form/>      
                </div>
-
-               
                
                <div className="img-area">
                <Image src={LogoWhite} wrapper="logo-white" />
