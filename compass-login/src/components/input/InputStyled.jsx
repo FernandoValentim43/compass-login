@@ -36,5 +36,15 @@ export const InputStyled = styled.div`
         box-shadow: 0 0 1px #26292C;
     }
 
+    .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+     
+    .icon {
+        padding: 10px;
+        min-width: 40px;
+    }
+
 
 `

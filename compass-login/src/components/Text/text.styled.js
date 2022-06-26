@@ -11,7 +11,7 @@ export const TextStyled = styled.div`
             font-size: 56px;
             color: #E0E0E0;
             margin-bottom: 0px;
-            margin-top: 25px;
+            margin-top: 15%;
         }
 
         > .paragraph {

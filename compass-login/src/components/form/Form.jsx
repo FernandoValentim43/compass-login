@@ -14,7 +14,7 @@ export function Form() {
           <Text name="paragraph"text="Para continuar navegando de forma segura, efetue o login na rede." />
           <Text name="login"text="Login" />
 
-          <Input type="text" placeholder="Usuário" />
+          <Input type="email" placeholder="Usuário" />
           <Input type="password" placeholder="Senha" />
           <Button name="login" text="continuar" />
         </form>
