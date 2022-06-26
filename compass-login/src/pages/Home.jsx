@@ -1,25 +1,23 @@
-import { HomeStyled } from "../components/Section/Home.styled"
-import Image from "../components/Image/Image"
+import { HomeStyled } from "../components/Section/Home.styled";
 
-import LogoBall from "../assets/uolball.png"
-import LogoBlack from "../assets/compass-logo-black.png"
+import Image from "../components/Image/Image";
+
+import LogoBall from "../assets/uolball.png";
+
+import LogoBlack from "../assets/compass-logo-black.png";
 
 function Home() {
-    return (
+  return (
     <HomeStyled>
-        <section className="main">
-        <header>
+      <div className="header">
         <Image src={LogoBlack} wrapper="logo-black" />
-        </header>
+      </div>
 
-        <Image src={LogoBall} wrapper="logo-ball" />
-
-
-        </section>
+      <div className="main">
+        <Image src={LogoBall} wrapper="logo-ball" name="logoball" />
+      </div>
     </HomeStyled>
-      
-    )
-  }
-  
-export default Home
-  
+  );
+}
+
+export default Home;
