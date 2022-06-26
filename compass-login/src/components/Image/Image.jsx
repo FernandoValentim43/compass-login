@@ -1,9 +1,7 @@
 export default function Image(props) {
     return (
-        <div className={props.wrapper}>
-            <img src={props.src}/>
-        </div>
-            
-       
-    )
-}
+      <div className={props.name}>
+        <img className={props.wrapper} src={props.src} />
+      </div>
+    );
+  }

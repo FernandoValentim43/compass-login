@@ -73,10 +73,6 @@ export const TextStyled = styled.div`
             max-width: 270px;
             margin-left: 10px;
             margin-top: 0px;
-
-            
-
-            
         }
  
  

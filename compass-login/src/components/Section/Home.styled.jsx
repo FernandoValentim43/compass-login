@@ -1,23 +1,25 @@
 import styled from "styled-components";
-export const HomeStyled = styled.section`
-.main {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-color: #E5E5E5;
+
+export const HomeStyled = styled.div`
+  height: 100vh;
+  .logo-black {
+    width: 14rem
   }
-
-  .logo-ball img {
-    height: 58vh;
-    position:absolute;                
-    bottom:0;                        
-    left:0;  
+  .logoball {
+   display: flex;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   height: 25rem;
+    
   }
-
-  .logo-black img {
-    width: 250px;
-
+  footer {
+    background-color: #26292C;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 80px;
   }
-
-
-`
+`;
