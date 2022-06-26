@@ -37,7 +37,7 @@ export const SectionStyledLogin = styled.section`
     display: flex;
     width: 100%;
     height: 60px;
-    margin-left: 13%;
+    margin-left: 18%;
     
   }
 

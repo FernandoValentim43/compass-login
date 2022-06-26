@@ -7,14 +7,17 @@ export const InputStyled = styled.div`
         font-size: 16px;
         line-height: 24px;
 
-        width: 22.6rem;
-        height: 4.18rem;
+        width: 320px;
+        height: 58px;
         
+
         padding-left: 15px;
        
         background-color: transparent;
         border: solid 1px white;
         border-radius: 50px; 
+        margin-left: 10px;
+        margin-bottom: 30px;
     }
 
     input::placeholder {
