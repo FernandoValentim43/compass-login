@@ -16,6 +16,9 @@ export function Form() {
 
           <Input type="email" placeholder="Usuário" />
           <Input type="password" placeholder="Senha" />
+
+          <Text name="invalid"text="Ops, usuário ou senha inválidos. Tente novamente!" />
+
           <Button name="login" text="continuar" />
         </form>
       </div>

@@ -54,6 +54,31 @@ export const TextStyled = styled.div`
             align-items: center;
             background-color: red;
         }
+
+        
+        > .invalid {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            color: #E9B425;
+
+            
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            max-width: 300px;
+            margin-left: 10px;
+            margin-top: 0px;
+
+            visibility: hidden;
+
+            
+        }
+ 
  
 `
 
