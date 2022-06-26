@@ -12,7 +12,7 @@ const ButtonStyled = styled.div`
         font-family: 'Poppins';
         font-style: normal;
         color: white;
-        width: 320px;
+        width: 280px;
         height: 55px;
         font-size: 1.13rem;
         margin-top: 25px;

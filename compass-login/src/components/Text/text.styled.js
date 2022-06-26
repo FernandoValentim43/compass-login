@@ -8,7 +8,7 @@ export const TextStyled = styled.div`
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
-            font-size: 56px;
+            font-size: 50px;
             color: #E0E0E0;
             margin-bottom: 0px;
             margin-top: 15%;
@@ -22,8 +22,8 @@ export const TextStyled = styled.div`
             color: #E0E0E0;
 
             margin-top: 2px;
-            margin-bottom: 70px;
-            max-width: 320px;
+            margin-bottom: 50px;
+            max-width: 280px;
             
         }
 
@@ -70,11 +70,11 @@ export const TextStyled = styled.div`
             align-items: center;
             text-align: center;
 
-            max-width: 300px;
+            max-width: 270px;
             margin-left: 10px;
             margin-top: 0px;
 
-            visibility: hidden;
+            
 
             
         }

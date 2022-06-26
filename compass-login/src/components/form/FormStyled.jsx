@@ -7,13 +7,4 @@ export const FormStyled = styled.div`
     justify-content: center;
   }
 
-  form:invalid {
-    .invalid {
-      visibility: hidden;
-    }
-
-    input:focus {
-        border: solid 1px #E9B425;
-    }
-  }
 `;

@@ -11,7 +11,7 @@ export const InputStyled = styled.div`
         font-size: 16px;
         line-height: 24px;
 
-        width: 300px;
+        width: 250px;
         height: 45px;
         
 
