@@ -13,7 +13,7 @@ function Login() {
             <section className="main">
                
                <div className="login-area">
-                    <Form></Form>
+                    <Form/>
 
 
 
