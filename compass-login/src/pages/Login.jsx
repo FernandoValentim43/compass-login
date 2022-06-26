@@ -16,7 +16,7 @@ function Login() {
                </div>
                
                <div className="img-area">
-               
+               <Image src={LogoWhite} wrapper="logo-white" />
                <Image src={Image2} wrapper="login-img" />
                </div>
                

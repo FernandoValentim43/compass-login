@@ -27,7 +27,6 @@ export const SectionStyledLogin = styled.section`
     position: absolute;
     z-index: 2;
     display: flex;
-    width: 100%;
     height: 60px;
     margin-left: 18%;
     
