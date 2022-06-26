@@ -11,3 +11,6 @@ const FormStyled = styled.div`
     }
 
 `
+
+export { FormStyled }
+
