@@ -12,7 +12,7 @@ const Title = ({ type, label }) => {
   const getHType = (type) => {
     switch (type) {
       case "h1":
-        return <H1Styled onClick={() => console.log('h1 clicado')}>{label}</H1Styled>;
+        return <H1Styled>{label}</H1Styled>;
       case "h2":
         return <H2Styled>{label}</H2Styled>;
       case "h3":
