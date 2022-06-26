@@ -4,7 +4,9 @@ import { TextStyled } from './text.styled'
 export function Text ( {name, text} )  {
   return (
     <TextStyled>
-        <p className={name}>{text}</p>
+      <div>
+       <p className={name}>{text}</p>
+      </div>
     </TextStyled>
   )
 }

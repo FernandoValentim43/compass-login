@@ -32,16 +32,23 @@ export const SectionStyledLogin = styled.section`
   /* imgs */
 
   .logo-white {
-    z-index: +1;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin-left: 13%;
+    
   }
 
   .logo-white img {
+    display: flex;
     position: absolute;
     z-index: 2;
 
     width: 220px;
     max-width: 220px;
-    padding: 0px 35vh;
+    
   }
 
   .login-img {
