@@ -24,8 +24,8 @@ export function Form() {
 
          
           
-          <Input type="email" placeholder="Usuário" src={iconLogin}/>
-          <Input type="password" placeholder="Senha" src={iconLock}/>
+          <Input name="email" type="email" placeholder="Usuário" src={iconLogin}/>
+          <Input name="password" type="password" placeholder="Senha" src={iconLock}/>
 
           <Text name="invalid"text="Ops, usuário ou senha inválidos. Tente novamente!" />
 

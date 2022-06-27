@@ -7,11 +7,10 @@ import Image from "../Image/Image";
 export function Input(props) {
   return (
     <InputStyled>
-    <Image src={props.src}/>
-
       <div className="input-div">
+      <Image src={props.src} name="icon"/>
         <input
-          className="Input"
+          className={props.name}
           type={props.type}
           placeholder={props.placeholder}
           required={true}

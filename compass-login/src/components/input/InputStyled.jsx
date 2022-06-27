@@ -36,9 +36,17 @@ export const InputStyled = styled.div`
         box-shadow: 0 0 1px #26292C;
     }
 
-    
+    .icon {
+        position: absolute;
+        padding-top: 14px;
+        width: 250px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    img {
+        width: 16px;
+    }
 
     
-
-
 `
