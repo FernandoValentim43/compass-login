@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const ButtonStyled = styled.div`
+    div {heigth: 100%}
+
     .login{
         cursor: pointer;
         border-radius: 3.125rem;
