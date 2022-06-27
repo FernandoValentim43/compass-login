@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const TextStyled = styled.div`
         display: flex;
+       
         
         > .greeting {
 

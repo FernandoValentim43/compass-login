@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const InputStyled = styled.div`
-    
+      
+
+
     input {
         
         font-family: 'Poppins';
@@ -23,11 +25,14 @@ export const InputStyled = styled.div`
 
         margin-left: 5px;
         margin-bottom: 24px;
+        
+
     }
 
     input::placeholder {
         color: #E0E0E0;
         opacity: 1;
+        cursor: pointer; 
     }
 
     input:focus {
@@ -36,12 +41,16 @@ export const InputStyled = styled.div`
         box-shadow: 0 0 1px #26292C;
     }
 
+    input:focus::placeholder {
+        color: transparent;
+      }
+
     .icon {
         position: absolute;
         padding-top: 14px;
-        width: 250px;
-        display: flex;
-        justify-content: flex-end;
+        
+        margin-left: 240px;
+        
     }
 
     img {
