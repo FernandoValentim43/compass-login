@@ -6,8 +6,6 @@ import Image2 from "../assets/image2.png"
 import LogoWhite from "../assets/compass-logo-white.png"
 
 import Form from "../components/form/Form"
-import Text from "../components/Text/text"
-
 function Login() {
     return (
         <SectionStyledLogin>

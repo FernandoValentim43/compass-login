@@ -60,7 +60,7 @@ export const TextStyled = styled.div`
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 700;
-            font-size: 16px;
+            font-size: 14px;
             color: #E9B425;
 
             
@@ -71,8 +71,10 @@ export const TextStyled = styled.div`
             text-align: center;
 
             max-width: 270px;
-            margin-left: 10px;
+            margin-left: 7px;
             margin-top: 0px;
+
+            visibility:hidden;
         }
  
  

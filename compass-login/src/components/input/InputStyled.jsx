@@ -21,7 +21,7 @@ export const InputStyled = styled.div`
         border: solid 1px white;
         border-radius: 50px;
 
-        margin-left: 0px;
+        margin-left: 5px;
         margin-bottom: 24px;
     }
 
