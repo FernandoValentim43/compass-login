@@ -75,7 +75,7 @@ export const TextStyled = styled.div`
             margin-left: 7px;
             margin-top: 0px;
 
-            visibility:hidden;
+            visibility:visible;
         }
  
  

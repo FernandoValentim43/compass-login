@@ -4,10 +4,12 @@ import Button from "../button/Button";
 import { FormStyled } from "./FormStyled";
 import Text from "../Text/text";
 
-import Image from "../Image/Image";
 
 import iconLogin from "../../assets/icon.login.png"
 import iconLock from "../../assets/icon.lock.png"
+
+
+
 
 
 export function Form() {

@@ -7,6 +7,8 @@ export const SectionStyledLogin = styled.section`
   }
   .login-area {
     width: 55%;
+    
+    min-width: 304px;
   }
   .img-area {
     width: 45%;
