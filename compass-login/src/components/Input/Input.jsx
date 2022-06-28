@@ -1,15 +1,24 @@
-import { InputStyled } from "./Input.styled.jsx";
+import { InputStyled } from "./InputStyled";
+
+import Image from "../Image/Image";
 
 
-export function Input (props) {
-return (
-    <div className="input-div">
-        <InputStyled>
-            <input  className="Input" type={props.type} placeholder={props.placeholder} required={true}/>  
-        </InputStyled>
-    </div>
- );
-   
+
+export function Input(props) {
+  return (
+    <InputStyled>
+      <div className="input-div">
+      <Image src={props.src} name="icon"/>
+        <input
+          className={props.name}
+          type={props.type}
+          placeholder={props.placeholder}
+          required={true}
+          pattern={props.inputPattern}
+        />
+      </div>
+    </InputStyled>
+  );
 }
 
 export default Input;
