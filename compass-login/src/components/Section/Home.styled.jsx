@@ -47,4 +47,5 @@ export const HomeStyled = styled.div`
       margin-left: 1%;
     }
   }
+
 `;
