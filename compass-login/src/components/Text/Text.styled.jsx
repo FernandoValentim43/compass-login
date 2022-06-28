@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const TextStyled = styled.div`
         display: flex;
-        
+
         > .greeting {
 
             font-family: 'Poppins';
@@ -74,7 +74,26 @@ export const TextStyled = styled.div`
             margin-left: 10px;
             margin-top: 0px;
         }
- 
- 
+
+        .paragraphFooter {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            color: #E0E0E0;
+            max-width: 125px;
+            text-align: right;
+        }
+
+        .bigParagraphFooter {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            color: #E0E0E0;
+            max-width: 525px;
+            text-align: right;
+            margin-left: 10px;
+        }
 `
 

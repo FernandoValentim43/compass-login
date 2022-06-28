@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const ButtonStyled = styled.div`
-    div {heigth: 100%}
 
     .login{
         cursor: pointer;
@@ -23,8 +22,8 @@ const ButtonStyled = styled.div`
     .navegate{
         cursor: pointer;
         background-color: white;
-        width: 8.18rem;
-        height: 6.18rem;
+        width: 8rem;
+        height: 90px;
         color: #C13216;
         font-family: 'Poppins';
         font-style: normal;
@@ -34,8 +33,8 @@ const ButtonStyled = styled.div`
     .logout{
         cursor: pointer;
         background-color: #1C1D20;
-        width: 8.18rem;
-        height: 6.18rem;
+        width: 8rem;
+        height: 90px;
         color: white;
         font-family: 'Poppins';
         font-style: normal;

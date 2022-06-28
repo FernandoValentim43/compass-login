@@ -17,7 +17,9 @@ export function Timer () {
     
 
     return (
-        <TimerSeconds>{seconds}</TimerSeconds>
+        <TimerSeconds>
+            {seconds}
+        </TimerSeconds>
     )
 }
 
