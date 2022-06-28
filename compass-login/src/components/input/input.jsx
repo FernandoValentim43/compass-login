@@ -14,6 +14,7 @@ export function Input(props) {
           type={props.type}
           placeholder={props.placeholder}
           required={true}
+          pattern={props.inputPattern}
         />
       </div>
     </InputStyled>

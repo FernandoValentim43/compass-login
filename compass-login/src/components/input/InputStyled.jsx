@@ -41,6 +41,8 @@ export const InputStyled = styled.div`
         box-shadow: 0 0 1px #26292C;
     }
 
+    
+
     input:focus::placeholder {
         color: transparent;
       }

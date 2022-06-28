@@ -9,14 +9,15 @@ import iconLogin from "../../assets/icon.login.png"
 import iconLock from "../../assets/icon.lock.png"
 
 
-
-
+import { useNavigate } from "react-router-dom";
 
 export function Form() {
+  let navigate = useNavigate();
+
   return (
     <FormStyled>
       <div className="form-div">
-        <form action="/">
+        <form onSubmit={() => {navigate("/Home")}} >
 
         
 
@@ -25,11 +26,12 @@ export function Form() {
           <Text name="login"text="Login" />
 
          
-          
-          <Input name="email" type="email" placeholder="Usuário" src={iconLogin}/>
-          <Input name="password" type="password" placeholder="Senha" src={iconLock}/>
+         
 
-          <Text name="invalid"text="Ops, usuário ou senha inválidos. Tente novamente!" />
+          <Input name="login" type="text" placeholder="Usuário" src={iconLogin} inputPattern="^[A-Za-z]+\.[A-Za-z]+$" />
+          <Input name="password" type="password" placeholder="Senha" src={iconLock} inputPattern="^[0-9]{6,9}$" />
+
+          <Text name="invalid" text="Ops, usuário ou senha inválidos. Tente novamente!"/>
 
           <Button name="login" text="continuar" />
         </form>

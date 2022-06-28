@@ -1,12 +1,16 @@
 import { SectionStyledLogin } from "../components/Section/Login.styled"
 
 import Image from "../components/Image/Image"
-
 import Image2 from "../assets/image2.png"
 import LogoWhite from "../assets/compass-logo-white.png"
-
 import Form from "../components/form/Form"
+
+
+
 function Login() {
+
+    
+
     return (
         <SectionStyledLogin>
             <section className="main">
