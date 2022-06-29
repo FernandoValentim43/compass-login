@@ -2,19 +2,35 @@ import styled from "styled-components";
 
 export const HomeStyled = styled.div`
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   user-select: none;
   .logo-black {
-    width: 14rem
+    width: 15em;
+  }
+
+  .main {
+    display: flex;
+    flex: column;
   }
 
   .logoball {
    display: flex;
-   position: absolute;
+   flex-direction: flex-end;
    left: 0;
    bottom: 0;
    right: 0;
    height: 25rem;
+   @media (max-width: 800px) {
+    display: flex;
+   }
     
+  }
+
+  header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
   }
 
   footer {
@@ -23,9 +39,12 @@ export const HomeStyled = styled.div`
       font-weight: 400;
       transform: rotate(90deg);
       margin: 0;
+      @media (max-width: 800px) {
+        display: none;
+      }
     }
+    width: 100%;
     background-color: #26292C;
-    position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
@@ -33,6 +52,10 @@ export const HomeStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: end;
+    @media (max-width: 800px) {
+      flex-direction: row-reverse;
+
+    }
     .seconds{
       text-align: center;
       font-family: 'Poppins';
@@ -40,7 +63,9 @@ export const HomeStyled = styled.div`
       font-weight: 400;
       color: white;
       margin: 0;
-      margin-bottom: 15px;
+      @media (max-width: 800px) {
+        display: none;
+      }
     }
     .test{
       margin-right: 21%;

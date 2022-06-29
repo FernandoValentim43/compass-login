@@ -10,4 +10,8 @@ export const TimerSeconds = styled.div`
     font-weight: 700;
     color: white;
     margin: 0;
+    
+    @media(max-width: 800px) {
+        display: none;
+    }
     `

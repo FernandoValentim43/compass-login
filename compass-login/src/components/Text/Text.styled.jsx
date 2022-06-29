@@ -69,6 +69,9 @@ export const TextStyled = styled.div`
             color: #E0E0E0;
             max-width: 125px;
             text-align: right;
+            @media(max-width: 800px) {
+                display: none;
+            }
         }
         .bigParagraphFooter {
             font-family: 'Poppins';
@@ -79,5 +82,8 @@ export const TextStyled = styled.div`
             max-width: 525px;
             text-align: right;
             margin-left: 10px;
+            @media (max-width: 800px) {
+                display: none;
+            }
         }
 `
