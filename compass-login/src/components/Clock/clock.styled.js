@@ -6,8 +6,10 @@ const TextClock = styled.p`
     font-style: normal;
     font-weight: 700;
     padding: 10px;
+    text-align: center;
     color: #222222;
     height: 7.31rem;
+    
 `;
 const TextDate = styled.p`
     margin: 0;
@@ -25,12 +27,13 @@ const GeneralDiv = styled.div`
     display: flex;
     height: 140px;
     min-height: 140px;
-    justify-content: center;
+    justify-self: center;
     align-itens: center;
     flex-direction: column;
+  
+   
     
     
-    margin-left: 10%;
     
     @media(max-width: 800px) {
         display: none;

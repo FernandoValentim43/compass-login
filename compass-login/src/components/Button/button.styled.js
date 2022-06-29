@@ -9,7 +9,7 @@ const ButtonStyled = styled.div`
         border: 1px solid transparent;
         border-image: linear-gradient(#FF2D04 100%, #C13216 100%);
         border-image-slice: 0;
-        font-family: 'Poppins';
+        font-family: 'Poppins';a
         font-style: normal;
         color: white;
         width: 280px;

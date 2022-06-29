@@ -2,19 +2,17 @@ import { InputStyled } from "./InputStyled";
 
 import Image from "../Image/Image";
 
-
-
-export function Input(props) {
+export function Input({ name, src, type, placeholder, register }) {
   return (
     <InputStyled>
       <div className="input-div">
-      <Image src={props.src} name="icon"/>
+        <Image src={src} name="icon" />
+
         <input
-          className={props.name}
-          type={props.type}
-          placeholder={props.placeholder}
-          required={true}
-          pattern={props.inputPattern}
+          className={name}
+          type={type}
+          placeholder={placeholder}
+          {...register(name, { required: true })}
         />
       </div>
     </InputStyled>

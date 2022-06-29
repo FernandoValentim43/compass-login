@@ -9,6 +9,11 @@ export const HomeStyled = styled.div`
   .logo-black {
     width: 15em;
     
+    @media (max-width: 800px) {
+      width: 14em;
+  }
+  
+
   }
 
   .main {
@@ -29,13 +34,15 @@ export const HomeStyled = styled.div`
   header {
     display: flex;
     flex: 1;
-    justify-content: space-between;
+    align-itens: center;
+    justify-content: space-between !important; 
+   
     
   }
 
   .logoblack {
-    margin-right: 10vh;
-    width: 28vw;
+    width: auto;
+    
   }
 
   footer {

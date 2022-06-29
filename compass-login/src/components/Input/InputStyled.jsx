@@ -15,9 +15,12 @@ export const InputStyled = styled.div`
         padding-left: 15px;      
         background-color: transparent;
         border: solid 1px white;
+        display: flex;
+        justify-content: center;
         border-radius: 50px;
-        margin-left: 5px;
+        margin-left: 10px;
         margin-bottom: 24px;
+        color: #E0E0E0;
     }
 
     input::placeholder {
@@ -42,7 +45,7 @@ export const InputStyled = styled.div`
         position: absolute;
         padding-top: 14px;
         
-        margin-left: 240px;
+        margin-left: 220px;
         
     }
 

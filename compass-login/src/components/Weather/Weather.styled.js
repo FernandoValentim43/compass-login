@@ -4,8 +4,9 @@ const WeatherContainer = styled.div`
   justify-content: flex-end;
   flex: 1;
   display: flex;
-  margin: 10px; 
+  margin: 20px; 
   user-select: none;
+  max-width: 200px;
   @media(max-width: 800px) {  
    margin-left: 0px;
 }

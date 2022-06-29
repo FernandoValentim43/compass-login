@@ -7,8 +7,7 @@ export const FormStyled = styled.div`
     justify-content: center;
   }
 
-
-
- 
-
+  .errorMessage {
+    height: 63.5px;
+  }
 `;
