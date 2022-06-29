@@ -22,7 +22,7 @@ const ButtonStyled = styled.div`
         cursor: pointer;
         background-color: white;
         width: 131px;
-        height: 92px;
+        height: 90px;
         color: #C13216;
         font-family: 'Poppins';
         font-style: normal;
@@ -38,7 +38,7 @@ const ButtonStyled = styled.div`
         cursor: pointer;
         background-color: #1C1D20;
         width: 131px;
-        height: 92px;
+        height: 90px;
         color: white;
         font-family: 'Poppins';
         font-style: normal;

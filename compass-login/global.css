@@ -2,9 +2,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
+}
 
+
+@media (max-width: 800px) {
+   * {
     overflow-y: hidden;
     overflow-x: hidden;
-
-
+   }
 }

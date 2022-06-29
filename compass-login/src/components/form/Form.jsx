@@ -42,7 +42,7 @@ export function Form() {
     <FormStyled>
       <div className="form-div">
         <form onSubmit={handleSubmit(loginUser)}>
-          <Text text="Olá ," name="greeting" />
+          <Text text="Olá," name="greeting" />
           <Text
             name="paragraph"
             text="Para continuar navegando de forma segura, efetue o login na rede."
