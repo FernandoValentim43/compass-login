@@ -21,24 +21,33 @@ const ButtonStyled = styled.div`
     .navegate{
         cursor: pointer;
         background-color: white;
-        width: 8.18rem;
-        height: 6.18rem;
+        width: 131px;
+        height: 99px;
         color: #C13216;
         font-family: 'Poppins';
         font-style: normal;
         font-size: 0.75rem;
         border: none;
+
+       
+        padding: 0px;
+        margin: 0px;
+       
     }
     .logout{
         cursor: pointer;
         background-color: #1C1D20;
-        width: 8.18rem;
-        height: 6.18rem;
+        width: 131px;
+        height: 99px;
         color: white;
         font-family: 'Poppins';
         font-style: normal;
         font-size: 0.75rem;
         border: none;
+        
+        padding: 0px;
+        margin: 0px;
+
     }
 `;
 

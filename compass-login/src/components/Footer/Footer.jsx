@@ -19,6 +19,7 @@ const Footer = () => {
         <Timer />
         <p className="seconds">seconds</p>
       </div>
+      
       <Button id="navegate" name="navegate" text="Continuar Navegando" />
       <Button id="logout" name="logout" text="Logout" />
     </footer>

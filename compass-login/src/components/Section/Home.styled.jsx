@@ -44,7 +44,7 @@ export const HomeStyled = styled.div`
   }
 
   footer {
-
+    display: flex;
     position:absolute;
     bottom:0;
 
