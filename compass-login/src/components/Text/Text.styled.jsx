@@ -74,15 +74,17 @@ export const TextStyled = styled.div`
             }
         }
         .bigParagraphFooter {
+            
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
             color: #E0E0E0;
-            max-width: 525px;
+            flex: 1;
+            
             text-align: right;
             margin-left: 10px;
-            @media (max-width: 800px) {
+            @media (max-width: 950px) {
                 display: none;
             }
         }

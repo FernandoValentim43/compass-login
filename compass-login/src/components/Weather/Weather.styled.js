@@ -1,53 +1,56 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const WeatherContainer = styled.div`
-    justify-content: flex-end;
-    flex: 1;
-    display: flex;
-    padding: 15px;
-    user-select: none;
-`
+  justify-content: flex-end;
+  flex: 1;
+  display: flex;
+  margin: 10px; 
+  user-select: none;
+  @media(max-width: 800px) {  
+   margin-left: 0px;
+}
+`;
 const ContentCity = styled.div`
-    align-items: center;
-    justify-content: center;
-`
+  align-items: center;
+  justify-content: center;
+`;
 
 const Paragraph = styled.p`
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    text-align: center;
-    color: #222222;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-`
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: #222222;
+`;
 
 const Temperature = styled.p`
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    text-align: center;
-    color: #222222;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-`
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #222222;
+  
+`;
 
 const ImgWeather = styled.img`
-    width: 40px;
-    height: 40px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-right: 5px;
-`
+  min-width: 40px;
+  min-height: 40px;
+  margin-right: 2px;
+`;
 
 const ContentTemperature = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
 
-export { WeatherContainer, Paragraph, Temperature, ImgWeather, ContentTemperature, ContentCity }
+export {
+  WeatherContainer,
+  Paragraph,
+  Temperature,
+  ImgWeather,
+  ContentTemperature,
+  ContentCity,
+};

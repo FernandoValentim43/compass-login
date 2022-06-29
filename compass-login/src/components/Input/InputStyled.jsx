@@ -4,29 +4,20 @@ export const InputStyled = styled.div`
       
 
 
-    input {
-        
+    input {       
         font-family: 'Poppins';
         font-style: normal;
-
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-
         width: 250px;
         height: 45px;
-        
-
-        padding-left: 15px;
-       
+        padding-left: 15px;      
         background-color: transparent;
         border: solid 1px white;
         border-radius: 50px;
-
         margin-left: 5px;
         margin-bottom: 24px;
-        
-
     }
 
     input::placeholder {

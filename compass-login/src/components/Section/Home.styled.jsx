@@ -5,25 +5,24 @@ export const HomeStyled = styled.div`
   display: flex;
   flex-direction: column;
   user-select: none;
+
   .logo-black {
     width: 15em;
+    
   }
 
   .main {
     display: flex;
     flex: column;
+  
+    
   }
 
   .logoball {
    display: flex;
    flex-direction: flex-end;
-   left: 0;
-   bottom: 0;
-   right: 0;
-   height: 25rem;
-   @media (max-width: 800px) {
-    display: flex;
-   }
+   width: 500px;
+   height: 370px;
     
   }
 
@@ -31,15 +30,29 @@ export const HomeStyled = styled.div`
     display: flex;
     flex: 1;
     justify-content: space-between;
+    
+  }
+
+  .logoblack {
+    margin-right: 10vh;
+    width: 28vw;
   }
 
   footer {
+    display: flex;    
+    width: 100px;
+    height: 100px;
+    @media (max-width: 800px) {
+      display: inline-block;
+    }
+
     .division{
       color: white;
       font-weight: 400;
       transform: rotate(90deg);
+   
       margin: 0;
-      @media (max-width: 800px) {
+      @media (max-width: 950px) {
         display: none;
       }
     }
@@ -70,6 +83,14 @@ export const HomeStyled = styled.div`
     .test{
       margin-right: 21%;
       margin-left: 1%;
+    }
+
+    .buttonsContainer {
+      display: inline-flex;
+      @media (max-width: 800px){
+        width: 100%;
+        flex-direction: row-reverse;
+      }
     }
   }
 
