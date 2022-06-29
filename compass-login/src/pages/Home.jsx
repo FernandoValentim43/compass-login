@@ -13,7 +13,7 @@ function Home() {
     <HomeStyled>
       <header>      
           <Image src={LogoBlack} wrapper="logo-black" name="logoblack"/>
-          <Weather />       
+                
       </header>
       <div className="main">
         <Image src={LogoBall} wrapper="logo-ball" name="logoball" />
