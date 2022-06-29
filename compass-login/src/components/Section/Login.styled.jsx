@@ -4,12 +4,19 @@ export const SectionStyledLogin = styled.section`
     display: flex;
     width: 100vw;
     height: 100vh;
+  
   }
   .login-area {
     width: 55%;
+    @media (max-width: 800px) {
+      width: 100%;
+    }
   }
   .img-area {
     width: 45%;
+    @media (max-width: 800px){
+      display: none;
+    }
   }
   .login-area {
     background: rgb(30, 32, 34);

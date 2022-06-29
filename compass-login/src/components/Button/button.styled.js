@@ -22,31 +22,32 @@ const ButtonStyled = styled.div`
         cursor: pointer;
         background-color: white;
         width: 131px;
-        height: 99px;
+        height: 92px;
         color: #C13216;
         font-family: 'Poppins';
         font-style: normal;
         font-size: 0.75rem;
         border: none;
-
        
-        padding: 0px;
-        margin: 0px;
+        @media (max-width: 800px) {
+            width: 25em;
+        }
        
     }
     .logout{
         cursor: pointer;
         background-color: #1C1D20;
         width: 131px;
-        height: 99px;
+        height: 92px;
         color: white;
         font-family: 'Poppins';
         font-style: normal;
         font-size: 0.75rem;
-        border: none;
-        
-        padding: 0px;
-        margin: 0px;
+        border: none;        
+       
+        @media (max-width: 800px) {
+            width: 10em;
+        }
 
     }
 `;
