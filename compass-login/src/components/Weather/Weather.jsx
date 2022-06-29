@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { WeatherContainer } from './Weather.styled'
+import { 
+    WeatherContainer, 
+    Paragraph, 
+    Temperature, 
+    ImgWeather, 
+    ContentTemperature,
+    ContentCity 
+} from './Weather.styled'
 import getWeatherByPosition from '../../services/weatherService'
 
 const Weather = () => {
@@ -8,6 +15,8 @@ const Weather = () => {
     const [cityName, setCityName] = useState('')
     const [temperature, setTemperature] = useState('')
     const [forecast, setForecast] = useState('')
+    const [icon, setIcon] = useState('')
+   
 
     useEffect(() => {
         getWheater()
@@ -21,7 +30,6 @@ const Weather = () => {
             setLongitude(longitude)
         })
 
-
         if(latitude && longitude === 0) return
 
         const response = await getWeatherByPosition({ latitude, longitude })
@@ -32,25 +40,23 @@ const Weather = () => {
         setCityName(name)
         setTemperature(temperature)
         setForecast(data.weather[0].main)
+        setIcon(data.weather[0].icon)
     }
-
-
+    
     console.log('render cicle', { latitude, longitude, cityName, forecast, temperature })
+
+    const iconurl = "http://openweathermap.org/img/w/" + icon + ".png";
 
     return (
         <WeatherContainer>
-            <div styles={{ maxWidth: '164px' }}>
-                <div>
-                    <h1>{cityName}</h1>
-                </div>
-                <div>
-                    <div>
-                        ICON
-                    </div>
-                    <div>
-                        {`${temperature}°`}
-                    </div>
-                </div>
+            <div>
+                <ContentCity>
+                    <Paragraph>{cityName}</Paragraph>
+                </ContentCity>
+                <ContentTemperature>                    
+                    <ImgWeather id="wicon" src={iconurl} alt="Weather icon"/>                 
+                    <Temperature>{`${temperature}°`}</Temperature>
+                </ContentTemperature>
             </div>
         </WeatherContainer>
     )

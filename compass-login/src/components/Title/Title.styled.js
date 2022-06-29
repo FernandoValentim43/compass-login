@@ -4,8 +4,11 @@ import styled from 'styled-components';
         display: flex;
         flex: 1;
         flex-direction: column;
-        padding: 56px;
-        pointer-events: none;  
+        padding: 20px;
+        pointer-events: none;
+        @media (max-width: 800px) {
+            display: none;
+        }  
     `
 
     const H1Styled = styled.h1`
@@ -21,7 +24,7 @@ import styled from 'styled-components';
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
-        font-size: 51px;
+        font-size: 45px;
         text-align: right;
         color: #C12D18;       
     `
@@ -40,7 +43,7 @@ import styled from 'styled-components';
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
-        font-size: 51px;
+        font-size: 45px;
         text-align: right;
         color: #C12D18;      
     `
@@ -49,7 +52,7 @@ import styled from 'styled-components';
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
-        font-size: 51px;
+        font-size: 45px;
         text-align: right;
         color: #C12D18;    
     `
@@ -58,7 +61,7 @@ import styled from 'styled-components';
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
-        font-size: 51px;
+        font-size: 45px;
         text-align: right;
         color: #C12D18;    
     `
