@@ -12,18 +12,26 @@ export const HomeStyled = styled.div`
   .main {
     display: flex;
     flex: column;
+    margin-bottom: 150px;
+    
   }
 
   .logoball {
    display: flex;
    flex-direction: flex-end;
+   position: absolute;
+   margin-bottom: 70px;
+   width: 500px;
    left: 0;
    bottom: 0;
    right: 0;
    height: 25rem;
+   height: 370px;
    @media (max-width: 800px) {
     display: flex;
    }
+
+   
     
   }
 
@@ -31,13 +39,20 @@ export const HomeStyled = styled.div`
     display: flex;
     flex: 1;
     justify-content: space-between;
+    max-height: 200px;
+    margin-bottom: 3rem;
   }
 
   footer {
+
+    position:absolute;
+    bottom:0;
+
     .division{
       color: white;
       font-weight: 400;
       transform: rotate(90deg);
+   
       margin: 0;
       @media (max-width: 800px) {
         display: none;

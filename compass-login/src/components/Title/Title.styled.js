@@ -4,7 +4,8 @@ import styled from 'styled-components';
         display: flex;
         flex: 1;
         flex-direction: column;
-        padding: 20px;
+        width: 1500px;
+        padding-right: 6vw;
         pointer-events: none;
         @media (max-width: 800px) {
             display: none;
@@ -14,7 +15,7 @@ import styled from 'styled-components';
     const H1Styled = styled.h1`
         font-family: 'Poppins';   
         font-weight: 700;
-        font-size: 28px;
+        font-size: 2vw;
         text-align: right;
         color: #C12D18;
         
@@ -24,7 +25,7 @@ import styled from 'styled-components';
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
-        font-size: 45px;
+        font-size: 2.9vw;
         text-align: right;
         color: #C12D18;       
     `
@@ -33,7 +34,7 @@ import styled from 'styled-components';
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
-        font-size: 19px;
+        font-size: 1.3vw;
         text-align: right;
         color: #222222; 
         line-height: 14px;
@@ -43,7 +44,7 @@ import styled from 'styled-components';
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
-        font-size: 45px;
+        font-size: 2.9vw;
         text-align: right;
         color: #C12D18;      
     `
@@ -52,7 +53,7 @@ import styled from 'styled-components';
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
-        font-size: 45px;
+        font-size: 2.9vw;
         text-align: right;
         color: #C12D18;    
     `
