@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const HomeStyled = styled.div`
   height: 100vh;
   display: flex;
+  min-width: 245px;
   flex-direction: column;
   user-select: none;
+
   .logo-black {
     width: 15em;
+    
   }
 
   .main {
@@ -38,9 +41,14 @@ export const HomeStyled = styled.div`
   header {
     display: flex;
     flex: 1;
-    justify-content: space-between;
-    max-height: 200px;
+    justify-content: space-around;
+    min-height: 150px;
     margin-bottom: 3rem;
+  }
+
+  .logoblack {
+    margin-right: 10vh;
+    width: 28vw;
   }
 
   footer {

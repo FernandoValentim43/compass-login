@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer"
 import Weather from "../components/Weather/Weather"
 import Title from "../components/Title/Title"
 import { TitleContainer } from "../components/Title/Title.styled"
+import Clock from "../components/Clock/Clock"
 
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
     <HomeStyled>
       <header>      
           <Image src={LogoBlack} wrapper="logo-black" name="logoblack"/>
+          <Clock/>
           <Weather />       
       </header>
       <div className="main">
