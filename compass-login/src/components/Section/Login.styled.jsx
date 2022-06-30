@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const SectionStyledLogin = styled.section`
+  user-select: none;
   * {
     overflow-y: hidden;
     overflow-x: hidden;
@@ -23,7 +24,7 @@ export const SectionStyledLogin = styled.section`
 
     display: flex;
     justify-content: center;
-    align-itens: center;
+    align-items: center;
     margin: auto;
     width: 55%;
     @media (max-width: 800px) {

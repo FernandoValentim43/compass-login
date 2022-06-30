@@ -7,42 +7,41 @@ export const HomeStyled = styled.div`
   user-select: none;
 
   .logo-black {
-    width: 15em;
-    
-    @media (max-width: 800px) {
-      width: 14em;
-  }
-  
-
+    width: 100%;
   }
 
   .main {
     display: flex;
     flex: column;
-  
-    
+    height: 50rem;
+    @media (max-width: 800px) {
+      height: 40rem;
+    }
   }
 
   .logoball {
    display: flex;
-   flex-direction: flex-end;
-   width: 500px;
-   height: 370px;
-    
+   align-self: flex-end;
+   max-width: 37.5rem;
+   max-height: 31.25rem;
+    img{
+      max-width: 37.5rem;
+      max-height: 36.8rem;
+      align-self: flex-start;
+    }
   }
 
   header {
     display: flex;
     flex: 1;
-    align-itens: center;
     justify-content: space-between !important; 
-   
-    
   }
 
   .logoblack {
     width: auto;
-    
+    @media (max-width: 800px) {
+      width: 50%;
+    }
   }
 
   footer {
@@ -74,7 +73,21 @@ export const HomeStyled = styled.div`
     justify-content: end;
     @media (max-width: 800px) {
       flex-direction: row-reverse;
-
+      .buttonsContainer{
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        .navegate1{
+          width: 100%;
+        }
+        .logout1{
+          width: 35%;
+        }
+        button{
+          width: 100%;
+        }
+      }
+      
     }
     .seconds{
       text-align: center;

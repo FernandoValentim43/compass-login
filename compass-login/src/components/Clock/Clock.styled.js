@@ -30,9 +30,6 @@ const GeneralDiv = styled.div`
     align-items: center;
     flex-direction: column;
     
-    
-    margin-left: 10%;
-    
     @media(max-width: 800px) {
         display: none;
     }
