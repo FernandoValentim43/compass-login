@@ -31,9 +31,7 @@ const GeneralDiv = styled.div`
     align-itens: center;
     flex-direction: column;
   
-   
-    
-    
+
     
     @media(max-width: 800px) {
         display: none;

@@ -41,7 +41,7 @@ export function Form() {
   return (
     <FormStyled>
       <div className="form-div">
-        <form onSubmit={handleSubmit(loginUser)}>
+        <form autocomplete="off" onSubmit={handleSubmit(loginUser)}>
           <Text text="Olá," name="greeting" />
           <Text
             name="paragraph"

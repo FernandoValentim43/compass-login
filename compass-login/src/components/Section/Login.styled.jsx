@@ -1,5 +1,7 @@
 import styled from "styled-components";
 export const SectionStyledLogin = styled.section`
+  user-select: none;
+
   * {
     overflow-y: hidden;
     overflow-x: hidden;
@@ -13,17 +15,14 @@ export const SectionStyledLogin = styled.section`
       rgba(58, 61, 64, 1) 100%
     );
 
-
     display: flex;
     width: 100vw;
     height: 100vh;
   }
   .login-area {
-    
-
     display: flex;
     justify-content: center;
-    align-itens: center;
+    align-items: center;
     margin: auto;
     width: 55%;
     @media (max-width: 800px) {
@@ -36,7 +35,7 @@ export const SectionStyledLogin = styled.section`
       display: none;
     }
   }
-  
+
   .home {
     background-color: #e5e5e5;
   }

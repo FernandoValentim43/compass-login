@@ -13,6 +13,7 @@ export function Input({ name, src, type, placeholder, register }) {
           type={type}
           placeholder={placeholder}
           {...register(name, { required: true })}
+          
         />
       </div>
     </InputStyled>

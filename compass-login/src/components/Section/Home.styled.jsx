@@ -7,64 +7,63 @@ export const HomeStyled = styled.div`
   user-select: none;
 
   .logo-black {
-    width: 15em;
-    
-    @media (max-width: 800px) {
-      width: 14em;
-  }
-  
-
+    width: 100%;
   }
 
   .main {
     display: flex;
     flex: column;
-  
-    
+    height: 50rem;
+    @media (max-width: 800px) {
+      height: 40rem;
+    }
   }
 
   .logoball {
-   display: flex;
-   flex-direction: flex-end;
-   width: 500px;
-   height: 370px;
-    
+    display: flex;
+    align-self: flex-end;
+    max-width: 37.5rem;
+    max-height: 31.25rem;
+    img {
+      max-width: 37.5rem;
+      max-height: 23rem;
+      align-self: flex-start;
+    }
   }
 
   header {
     display: flex;
     flex: 1;
-    align-itens: center;
-    justify-content: space-between !important; 
-   
-    
+    justify-content: space-between !important;
   }
 
   .logoblack {
     width: auto;
-    
+    @media (max-width: 800px) {
+      width: 50%;
+    }
   }
 
   footer {
-    display: flex;    
+    display: flex;
     width: 100px;
     height: 100px;
     @media (max-width: 800px) {
       display: inline-block;
     }
 
-    .division{
+    .division {
       color: white;
       font-weight: 400;
       transform: rotate(90deg);
-   
+
       margin: 0;
       @media (max-width: 950px) {
         display: none;
       }
     }
     width: 100%;
-    background-color: #26292C;
+    background-color: #26292c;
     left: 0;
     bottom: 0;
     right: 0;
@@ -74,11 +73,24 @@ export const HomeStyled = styled.div`
     justify-content: end;
     @media (max-width: 800px) {
       flex-direction: row-reverse;
-
+      .buttonsContainer {
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        .navegate1 {
+          width: 100%;
+        }
+        .logout1 {
+          width: 35%;
+        }
+        button {
+          width: 100%;
+        }
+      }
     }
-    .seconds{
+    .seconds {
       text-align: center;
-      font-family: 'Poppins';
+      font-family: "Poppins";
       font-style: normal;
       font-weight: 400;
       color: white;
@@ -87,18 +99,17 @@ export const HomeStyled = styled.div`
         display: none;
       }
     }
-    .test{
+    .test {
       margin-right: 21%;
       margin-left: 1%;
     }
 
     .buttonsContainer {
       display: inline-flex;
-      @media (max-width: 800px){
+      @media (max-width: 800px) {
         width: 100%;
         flex-direction: row-reverse;
       }
     }
   }
-
 `;
