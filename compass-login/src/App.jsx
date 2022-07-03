@@ -17,6 +17,9 @@ function App() {
     setIsLogged((isLogged = true));
   }
 
+
+
+  
   return (
     <AuthContext.Provider value={permission}>
       <BrowserRouter>
