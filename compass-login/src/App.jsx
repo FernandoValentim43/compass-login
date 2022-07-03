@@ -3,6 +3,7 @@ import React from 'react';
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Unauthorized from "./pages/Unauthorized";
+import NotFound from "./pages/NotFound";
 
 import PrivateRoute from "./Routes/PrivateRoute";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Login />} />
           <Route path="/Unauthorized" exact element={<Unauthorized />} />
+          <Route path="/*" exact element={<NotFound />} />
 
           <Route element={<PrivateRoute isLogged={isLogged} />}>
             <Route path="/Home" exact element={<Home />} />
