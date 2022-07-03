@@ -14,4 +14,7 @@ export const TimerSeconds = styled.div`
     @media(max-width: 800px) {
         display: none;
     }
-    `
+
+
+
+`

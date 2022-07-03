@@ -42,7 +42,7 @@ export const TextStyled = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: red;
+            
         }
         
         > .invalid {
@@ -87,5 +87,16 @@ export const TextStyled = styled.div`
             @media (max-width: 950px) {
                 display: none;
             }
+        }
+
+
+        .error {
+            font-family: 'Poppins';
+            text-align: center;
+            font-style: normal;
+            font-size: 20px;
+            font-weight: bolder;
+            color: #E0E0E0;
+            max-width: 280px;
         }
 `

@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from "react";
+import { AuthContext } from "../../App";
 import { Input } from "../input/Input";
 import Button from "../button/Button";
 import { FormStyled } from "./FormStyled";
@@ -19,29 +20,34 @@ const schema = yup
   .required();
 
 export function Form() {
-  
+  const setLogin = useContext(AuthContext);
+
   let navigate = useNavigate();
 
+
   useEffect(() => {
-    const loginStorage = localStorage.getItem('login');
-    const passwordStorage = localStorage.getItem('password');
-    setValue('login', loginStorage)
-    setValue('password', passwordStorage)
-    
-    if(nameRegex.test(loginStorage) && passwordStorage.length > 3) {
+    const loginStorage = localStorage.getItem("login");
+    const passwordStorage = localStorage.getItem("password");
+    setValue("login", loginStorage);
+    setValue("password", passwordStorage);
+
+    if (nameRegex.test(loginStorage) && passwordStorage.length > 3) {
       setTimeout(() => {
+        setLogin()
         navigate("/Home");
-      }, 5000)
+      }, 5000);
     }
-  },[])
+  }, []);
 
   function loginUser(data) {
-    const { login, password } = data
-    localStorage.setItem('login', login)
-    localStorage.setItem('password', password)
+    const { login, password } = data;
+    localStorage.setItem("login", login);
+    localStorage.setItem("password", password);
+
+    setLogin()
 
     navigate("/Home");
- }
+  }
 
   const {
     register,
@@ -55,7 +61,7 @@ export function Form() {
   return (
     <FormStyled>
       <div className="form-div">
-        <form autocomplete="off" onSubmit={handleSubmit(loginUser)}>
+        <form autoComplete="off" onSubmit={handleSubmit(loginUser)}>
           <Text text="Olá," name="greeting" />
           <Text
             name="paragraph"
@@ -93,4 +99,3 @@ export function Form() {
 }
 
 export default Form;
-
