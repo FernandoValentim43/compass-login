@@ -1,4 +1,4 @@
-import { InputStyled } from "./InputStyled";
+import { InputStyled } from "./Input.styled";
 
 import Image from "../Image/Image";
 
