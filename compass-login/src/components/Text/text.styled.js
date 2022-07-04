@@ -9,7 +9,7 @@ export const TextStyled = styled.div`
             font-size: 50px;
             color: #E0E0E0;
             margin-bottom: 0px;
-            margin-top: 15%;
+            margin-top: 5px;
         }
         > .paragraph {
             font-family: 'Poppins';

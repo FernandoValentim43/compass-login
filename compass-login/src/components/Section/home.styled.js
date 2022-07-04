@@ -22,7 +22,8 @@ export const HomeStyled = styled.div`
   .logoball {
     display: flex;
     align-self: flex-end;
-    max-width: 37.5rem;
+    width: 30rem;
+    max-width: 25rem;
     max-height: 25rem;
     @media (max-width: 600px){
       margin-right: 20px;
