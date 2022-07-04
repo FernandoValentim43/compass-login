@@ -86,4 +86,14 @@ export const TextStyled = styled.div`
                 display: none;
             }
         }
+
+        .error {
+            font-family: 'Poppins';
+            text-align: center;
+            font-style: normal;
+            font-size: 20px;
+            font-weight: bolder;
+            color: #E0E0E0;
+            max-width: 280px;
+        }
 `

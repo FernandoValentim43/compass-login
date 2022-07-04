@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Input } from "../Input/Input";
 import Button from "../button/Button";
 import { FormStyled } from "./form.styled";
@@ -10,6 +10,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { nameRegex } from "../../utils/regex/regex";
 import * as yup from "yup";
+import { AuthContext } from '../../App';
 
 const schema = yup
   .object({
@@ -28,6 +29,7 @@ const schema = yup
 
 export function Form() {
 
+  const setLogin = useContext(AuthContext);
   let navigate = useNavigate();
 
   useEffect(() => {
@@ -37,6 +39,7 @@ export function Form() {
     setValue('password', passwordStorage)
     if(nameRegex.test(loginStorage) && passwordStorage.length > 3) {
       setTimeout(() => {
+        setLogin()
         navigate("/Home");
       }, 5000)
     }
@@ -46,6 +49,7 @@ export function Form() {
     const { login, password } = data
     localStorage.setItem('login', login)
     localStorage.setItem('password', password)
+    setLogin()
     navigate("/Home");
     autoLogin()
  }
@@ -62,7 +66,7 @@ export function Form() {
   return (
     <FormStyled>
       <div className="form-div">
-        <form autocomplete="off" onSubmit={handleSubmit(loginUser)}>
+        <form autoComplete="off" onSubmit={handleSubmit(loginUser)}>
           <Text text="Olá," name="greeting" />
           <Text
             name="paragraph"
