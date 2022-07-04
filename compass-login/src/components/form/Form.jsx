@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { AuthContext } from "../../App";
 import { Input } from "../input/Input";
 import Button from "../button/Button";
-import { FormStyled } from "./FormStyled";
+import { FormStyled } from "./Form.styled";
 import Text from "../Text/text";
 import iconLogin from "../../assets/icon.login.png";
 import iconLock from "../../assets/icon.lock.png";
