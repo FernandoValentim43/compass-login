@@ -23,7 +23,7 @@ export const HomeStyled = styled.div`
     display: flex;
     align-self: flex-end;
     max-width: 37.5rem;
-    max-height: 31.25rem;
+    max-height: 25rem;
     @media (max-width: 600px){
       margin-right: 20px;
     }
