@@ -1,5 +1,7 @@
 import styled from "styled-components";
 export const SectionStyledLogin = styled.section`
+  user-select: none;
+
   * {
     overflow-y: hidden;
     overflow-x: hidden;
@@ -13,30 +15,46 @@ export const SectionStyledLogin = styled.section`
       rgba(58, 61, 64, 1) 100%
     );
 
-
     display: flex;
     width: 100vw;
     height: 100vh;
   }
   .login-area {
-    
-
     display: flex;
     justify-content: center;
-    align-itens: center;
-    margin: auto;
+    height: 100%;
+    margin: 5% auto;
     width: 55%;
-    @media (max-width: 800px) {
-      width: 100%;
+    @media (max-width: 825px) {
+      display: block;
+      margin-top: 4.37rem;
+      width: 500px;
+      height: 100%;
+      align-items: center;
+    }
+    @media (max-height: 670px) {
+      margin: 0;
+    }
+  }
+  .logo1{
+    display: none;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15%;
+    img{
+      margin: 0;
+    }
+    @media (max-width: 825px) {
+      display: flex;
     }
   }
   .img-area {
     width: 45%;
-    @media (max-width: 800px) {
+    @media (max-width: 825px) {
       display: none;
     }
   }
-  
+
   .home {
     background-color: #e5e5e5;
   }

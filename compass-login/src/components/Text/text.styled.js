@@ -76,12 +76,10 @@ export const TextStyled = styled.div`
         .bigParagraphFooter {
             
             font-family: 'Poppins';
-            font-style: normal;
             font-weight: 400;
             font-size: 12px;
             color: #E0E0E0;
-            flex: 1;
-            
+            max-width: 535px;
             text-align: right;
             margin-left: 10px;
             @media (max-width: 950px) {

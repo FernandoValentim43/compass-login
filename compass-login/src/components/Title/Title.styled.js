@@ -2,9 +2,10 @@ import styled from 'styled-components';
   
     const TitleContainer = styled.div`
         display: flex;
+        justify-content: center;
         flex: 1;
         flex-direction: column;
-        width: 1500px;
+        width: 100%;
         padding-right: 6vw;
         pointer-events: none;
         @media (max-width: 800px) {

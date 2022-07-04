@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { TextClock, TextDate, GeneralDiv } from "./Clock.styled";
+import { TextClock, TextDate, GeneralDiv } from "./clock.styled";
 
 function formatedTime() {
     const date = new Date();

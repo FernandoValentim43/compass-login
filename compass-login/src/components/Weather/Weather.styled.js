@@ -7,6 +7,9 @@ const WeatherContainer = styled.div`
   margin: 20px; 
   user-select: none;
   max-width: 200px;
+  div{
+    justify-content: center;
+  }
   @media(max-width: 800px) {  
    margin-left: 0px;
 }
@@ -36,9 +39,10 @@ const Temperature = styled.p`
 `;
 
 const ImgWeather = styled.img`
-  min-width: 40px;
-  min-height: 40px;
-  margin-right: 2px;
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 `;
 
 const ContentTemperature = styled.div`

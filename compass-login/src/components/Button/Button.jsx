@@ -4,8 +4,13 @@ import { ButtonStyled } from "./Button.styled";
 
 const Button = (props) => {
   return (
-    <ButtonStyled>
-      <button id={props.id} className={props.name} type={props.type}>
+    <ButtonStyled className={props.name + "1"}>
+      <button
+        id={props.id}
+        onClick={props.onClick}
+        className={props.name}
+        type={props.type}
+      >
         {props.text}
       </button>
     </ButtonStyled>

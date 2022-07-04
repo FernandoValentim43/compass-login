@@ -1,19 +1,14 @@
-import { Input } from "../input/Input";
+import React, { useEffect } from 'react';
+import { Input } from "../Input/Input";
 import Button from "../button/Button";
-
-import { FormStyled } from "./FormStyled";
+import { FormStyled } from "./form.styled";
 import Text from "../Text/text";
-
 import iconLogin from "../../assets/icon.login.png";
 import iconLock from "../../assets/icon.lock.png";
-
 import { useNavigate } from "react-router-dom";
-
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-
 import { nameRegex } from "../../utils/regex/regex";
-
 import * as yup from "yup";
 
 const schema = yup
@@ -23,16 +18,42 @@ const schema = yup
   })
   .required();
 
+  const autoLogin = () => {
+    const option = confirm('Deseja realizar Login automático?')
+    if(!option){
+      localStorage.removeItem('login');
+      localStorage.removeItem('password');
+    }
+  }
+
 export function Form() {
+
   let navigate = useNavigate();
 
-  function loginUser() {
+  useEffect(() => {
+    const loginStorage = localStorage.getItem('login');
+    const passwordStorage = localStorage.getItem('password');
+    setValue('login', loginStorage)
+    setValue('password', passwordStorage)
+    if(nameRegex.test(loginStorage) && passwordStorage.length > 3) {
+      setTimeout(() => {
+        navigate("/Home");
+      }, 5000)
+    }
+  },[])
+
+  function loginUser(data) {
+    const { login, password } = data
+    localStorage.setItem('login', login)
+    localStorage.setItem('password', password)
     navigate("/Home");
-  }
+    autoLogin()
+ }
 
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
@@ -41,14 +62,13 @@ export function Form() {
   return (
     <FormStyled>
       <div className="form-div">
-        <form onSubmit={handleSubmit(loginUser)}>
+        <form autocomplete="off" onSubmit={handleSubmit(loginUser)}>
           <Text text="Olá," name="greeting" />
           <Text
             name="paragraph"
             text="Para continuar navegando de forma segura, efetue o login na rede."
           />
           <Text name="login" text="Login" />
-
           <Input
             name="login"
             type="text"
@@ -72,7 +92,7 @@ export function Form() {
             )}
           </div>
 
-          <Button name="login" text="continuar" type="submit" />
+          <Button name="login" text="continuar" type="submit"/>
         </form>
       </div>
     </FormStyled>
@@ -80,3 +100,4 @@ export function Form() {
 }
 
 export default Form;
+

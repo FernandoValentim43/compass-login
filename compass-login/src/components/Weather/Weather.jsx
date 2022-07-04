@@ -8,6 +8,12 @@ import {
     ContentCity 
 } from './Weather.styled'
 import getWeatherByPosition from '../../services/weatherService'
+import Sun from '../../assets/sun.png'
+import Cloud from '../../assets/cloud.png'
+import Cloudy from '../../assets/cloudy.png'
+import Raining from '../../assets/raining.png'
+import Storm from '../../assets/storm.png'
+import Thunder from '../../assets/thunder.png'
 
 const Weather = () => {
     const [latitude, setLatitude] = useState(0)
@@ -40,13 +46,20 @@ const Weather = () => {
         setCityName(name)
         setTemperature(temperature)
         setForecast(data.weather[0].main)
-        setIcon(data.weather[0].icon)
+        const iconWheater=(data.weather[0].icon)
+        if(icon.includes("01")){
+            setIcon(Sun)}
+        else if(iconWheater.includes("02")){
+            setIcon(Cloudy)
+        }else if((iconWheater.includes("09")) || (iconWheater.includes("10"))){
+            setIcon(Raining)
+        }else if(iconWheater.includes("11")){
+            setIcon(Thunder)
+        }else{
+            setIcon(Cloud)
+        }
     }
-    
-    console.log('render cicle', { latitude, longitude, cityName, forecast, temperature })
-
-    const iconurl = "http://openweathermap.org/img/w/" + icon + ".png";
-
+    //console.log('render cicle', { latitude, longitude, cityName, forecast, temperature })
     return (
         <WeatherContainer>
             <div>
@@ -54,7 +67,7 @@ const Weather = () => {
                     <Paragraph>{cityName}</Paragraph>
                 </ContentCity>
                 <ContentTemperature>                    
-                    <ImgWeather id="wicon" src={iconurl} alt="Weather icon"/>                 
+                    <ImgWeather id="wicon" src={icon} alt="Weather icon"/>                 
                     <Temperature>{`${temperature}°`}</Temperature>
                 </ContentTemperature>
             </div>

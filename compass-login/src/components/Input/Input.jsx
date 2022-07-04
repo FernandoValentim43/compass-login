@@ -1,4 +1,4 @@
-import { InputStyled } from "./InputStyled";
+import { InputStyled } from "./input.styled";
 
 import Image from "../Image/Image";
 
@@ -13,6 +13,7 @@ export function Input({ name, src, type, placeholder, register }) {
           type={type}
           placeholder={placeholder}
           {...register(name, { required: true })}
+          
         />
       </div>
     </InputStyled>

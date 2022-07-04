@@ -15,7 +15,8 @@ function Login() {
         <SectionStyledLogin>
             <section className="main">
                <div className="login-area">
-                        <Form/>      
+                    <Image src={LogoWhite} wrapper="logo-white" name="logo1"/>
+                    <Form/>      
                </div>
                
                <div className="img-area">
